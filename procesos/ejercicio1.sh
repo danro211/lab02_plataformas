@@ -19,7 +19,36 @@ if ! ps -p $pid > /dev/null 2>&1; then
 # caso pid existe, se despliega la informacion
 else
 
-echo "Aqui la info del PID"
+	# Nombre del proceso
+	nombre_proceso=$(ps -p $pid -o comm=)
+	echo "El nombre del proceso es: $nombre_proceso"
+
+	# ID del proceso
+	echo "El ID del proceso es: $pid"
+
+	# Parent process ID
+	proceso_padre=$(ps -p $pid -o ppid=)
+	echo "El ID del proceso padre es: $proceso_padre"
+
+	# Usuario propietario
+	propietario=$(ps -p $pid -o user=)
+	echo "El usuario propietario del proceso es: $propietario"
+
+	# Uso de CPU
+	uso_cpu=$(ps -p $pid -o %cpu=)
+	echo "El consumo de %CPU del proceso es: $uso_cpu%"
+
+	# Consumo de memoria RAM
+	uso_mem=$(ps -p $pid -o %mem=)
+	echo "El consumo de memoria %RAM del proceso es: $uso_mem%"
+
+	# Status
+	status=$(ps -p $pid -o stat=)
+	echo "El Status del proceso es: $status"
+
+	# Path del ejecutable
+	path_exe=$(ps -p $pid -o cmd=)
+	echo "La ruta del ejecutable es: $path_exe"
 
 fi
 
