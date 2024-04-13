@@ -1,3 +1,1 @@
-2024-04-13 04:02:07 - Iniciando monitorización de por_monitorear/
-2024-04-13 04:02:48 - El archivo 'archivoy' en el directorio 'por_monitorear/' fue CREATE
-2024-04-13 04:02:59 - El archivo 'archivox' en el directorio 'por_monitorear/' fue DELETE
+2024-04-13 14:11:20 - Iniciando monitorización de /home/daniel/lab2/lab02_plataformas/servicios/por_monitorear
