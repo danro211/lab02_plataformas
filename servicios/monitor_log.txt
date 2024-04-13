@@ -1,0 +1,1 @@
+2024-04-13 14:11:20 - Iniciando monitorización de /home/daniel/lab2/lab02_plataformas/servicios/por_monitorear
